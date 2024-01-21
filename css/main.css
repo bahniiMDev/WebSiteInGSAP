@@ -60,7 +60,7 @@ body {
   height: 100vh;
 }
 .main-title {
-  font-size: calc(var(--index) * 6);
+  font-size: calc(var(--index) * 7);
   position: absolute;
   width: min-content;
   bottom: 14vh;
@@ -80,7 +80,7 @@ body {
   margin: calc(var(--gallery-gap)*0.25);
 }
 .gallery__item  {
-  max-width: calc(var(--index) * 20);
+  max-width: calc(var(--index) * 22);
   margin-bottom: var(--gallery-gap);
   max-height: 90vh;
   border-radius: 8px;
@@ -94,12 +94,12 @@ body {
   position: relative;
 }
 .text-block__title   {
-  font-size: calc(var(--index) * 1.75);
-  line-height: calc(var(--index) * 2);
+  font-size: calc(var(--index) * 2);
+  line-height: calc(var(--index) * 2.25);
   color: var(--color-header);
   margin-bottom: calc(var(--index) * 2);
 }
 .text-block__text {
-  font-size: calc(var(--index) * 0.75);
-  line-height: calc(var(--index) * 1);
+  font-size: calc(var(--index) * 1);
+  line-height: calc(var(--index) * 1.25);
 }
