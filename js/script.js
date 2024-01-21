@@ -4,7 +4,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 ScrollSmoother.create({
   smooth: 0.8,
   effects: true,
-  smoothTouch: 0.1,
+  smoothTouch: 0.7,
 });
 
 gsap.fromTo('.hero-section', { opacity: 1 }, {
