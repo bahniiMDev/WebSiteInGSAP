@@ -41,7 +41,7 @@ itemsR.forEach(item => {
   gsap.fromTo(item, {
     opacity: 0,
     x: 100,
-    y: -200,
+    y: 200,
   }, {
     opacity: 1,
     x: 0,
