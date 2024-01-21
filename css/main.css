@@ -1,0 +1,105 @@
+/* зброс стилів */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* перемені */
+:root {
+  --index: calc(1vw + 1vh);
+  --color-header: #f4efec;
+  --color-text: #cdc6c3;
+  --gallery-gap: calc(var(--index) * 7)
+}
+/* підключення шрифтів */
+@font-face {
+  font-family: realway-c;
+  src: url(../fonts/raleway-regular.woff2);
+}
+@font-face {
+  font-family: outfit-c;
+  src: url(../fonts/outfit-regular.woff2);
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: outfit-c;
+}
+/* will change */
+#smooth-content, #smooth-wrapper, .hero, .main-header, .gallery > * {
+will-change: transform;
+}
+/* стилі для тела */
+body {
+  background: #1d1d1b;
+  background-image: url(../img/bg.jpg);
+  background-size: 50px;
+  color: #fafafa;
+  font-family: realway-c;
+  overflow-x: hidden;
+}
+.hero {
+  width: calc(var(--index) * 34);
+  position: absolute;
+  right: 6vw;
+  top: 8vh;
+  z-index: -1;
+}
+@media (max-Width: 550px) {
+  .hero {
+    width: calc(var(--index) * 34);
+    position: absolute;
+    right: 0;
+    top: 8vh;
+    margin: 0 auto;
+    z-index: -1;
+  }
+}
+.container {
+  padding:  0 10vw;
+}
+.main-header {
+  height: 100vh;
+}
+.main-title {
+  font-size: calc(var(--index) * 6);
+  position: absolute;
+  width: min-content;
+  bottom: 14vh;
+  line-height: 1;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: calc(var(--index) * 6) 0;
+  margin-top: calc(var(--index) * 5);
+}
+.gallery > * {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: calc(var(--gallery-gap)*0.25);
+}
+.gallery__item  {
+  max-width: calc(var(--index) * 20);
+  margin-bottom: var(--gallery-gap);
+  max-height: 90vh;
+  border-radius: 8px;
+}
+.gallery__left {
+  margin-top: calc(var(--gallery-gap) * 0.5);
+}
+
+.text-block {
+  color: var(--color-text);
+  position: relative;
+}
+.text-block__title   {
+  font-size: calc(var(--index) * 1.75);
+  line-height: calc(var(--index) * 2);
+  color: var(--color-header);
+  margin-bottom: calc(var(--index) * 2);
+}
+.text-block__text {
+  font-size: calc(var(--index) * 0.75);
+  line-height: calc(var(--index) * 1);
+}
